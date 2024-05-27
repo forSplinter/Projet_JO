@@ -1,0 +1,136 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 500px;
+  width: 90%; /* Make width responsive */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  border-radius: 8px; 
+  box-sizing: border-box;/* Optional: adds rounded corners */
+  height: 100vh;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.helpButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.centerText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center; /* Centre les boutons sociaux horizontalement */
+  gap: 20px; /* Espace entre les boutons */
+  margin-top: 30px; /* Espace au-dessus des boutons sociaux */
+  width: 100%; /* Assure que le conteneur prend toute la largeur */
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.socialButton img {
+  width: 24px;
+  height: 24px;
+}  
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Smaller padding for smaller devices */
+    width: 100%; /* Use full width for very small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Smaller text on small screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Smaller buttons on small screens */
+  }
+}
