@@ -37,8 +37,13 @@
 }
 
 h1 {
-  text-align: center;
+  font-weight: bold; 
+  margin-bottom: 40px;
   color: #333;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
 
 form {
@@ -118,6 +123,47 @@ button:hover {
   height: 24px;
 }  
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menuItem {
+  background-color: gray; /* Couleur verte */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px; /* Taille de police pour les liens */
+  font-weight: medium; /* Poids de la police */
+  transition: background-color 0.3s, transform 0.3s; /* Transition pour le survol */
+}
+
+.menuItem:hover {
+  background-color: black; /* Vert foncé au survol */
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+.backButton {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: black; /* Vert pour l'harmonie avec les autres boutons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  display: inline-block; /* Permet au bouton de respecter le padding et la margin */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: gray; /* Assombrit le vert au survol */
+}
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
@@ -132,5 +178,15 @@ button:hover {
 
   button {
     padding: 8px 16px; /* Smaller buttons on small screens */
+  }
+
+  .menu {
+    width: 100%;
+    gap: 15px; /* Réduction de l'écart entre les éléments pour les petits écrans */
+  }
+
+  .menuItem {
+    width: 80%; /* Adaptation de la largeur pour les petits écrans */
+    padding: 12px 20px; /* Ajustement du padding pour une meilleure lisibilité */
   }
 }
