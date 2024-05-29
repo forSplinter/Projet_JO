@@ -4,6 +4,7 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import jdk.jfr.Event;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,7 +26,7 @@ public class ParticipationEntity {
 
     @Embeddable
     public static class ParticipationId implements Serializable {
-        private Integer atheleteID;
-        private Integer eventID;
+        private AthleteEntity atheleteID;
+        private EventEntity eventID;
     }
 }

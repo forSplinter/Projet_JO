@@ -8,6 +8,6 @@ import lombok.Data;
 @AllArgsConstructor
 @Builder
 public class ParticipationDto {
-    private Integer athleteID;
-    private Integer eventID;
+    private AthleteDto athleteID;
+    private EventDto eventID;
 }

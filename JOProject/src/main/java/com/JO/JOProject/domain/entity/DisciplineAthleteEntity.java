@@ -17,13 +17,11 @@ import java.io.Serializable;
 @Entity
 @Table(name = "disciplineatheletes")
 public class DisciplineAthleteEntity {
-    @EmbeddedId
-    private DisciplineAthletedId id;
-
-    @Embeddable
-    public static class DisciplineAthletedId implements Serializable {
-        private Integer atheleteID;
-        private Integer disciplineID;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @Column(nullable = false)
+    private AthleteEntity atheleteID;
+    private DisciplineEntity disciplineID;
 
 }

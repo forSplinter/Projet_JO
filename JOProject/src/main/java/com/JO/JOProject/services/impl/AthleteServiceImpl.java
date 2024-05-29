@@ -65,4 +65,5 @@ public class AthleteServiceImpl implements AthleteServices {
     public void deleteAthlete(Integer id) {
         athleteRepository.deleteById(id);
     }
+
 }

@@ -8,6 +8,6 @@ import lombok.Data;
 @AllArgsConstructor
 @Builder
 public class DisciplineAthleteDto {
-    private Integer athleteID;
-    private Integer disciplineID;
+    private AthleteDto athleteID;
+    private DisciplineDto disciplineID;
 }
