@@ -1,0 +1,56 @@
+
+.logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.logo1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.searchBlock {
+  margin-top:35%;
+}
+.BarreRecherche{
+    border-radius: 8px;
+    width:70%;
+    Padding:2%;
+    font-size: 150%;
+    display: flex;
+    margin-left: 5%;
+}
+h2{
+    margin-left:10px;
+}
+.recherchebouton{
+    background-color: rgb(199, 199, 199);
+    font-size: 100%;
+    width: 25%;
+    right: 0;
+    margin-right: 10%;   
+    position: absolute;
+
+}
+.Registre button{
+    width: calc(100%);
+    margin: 5px;
+    margin-left:30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9e9e9e;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.retourhome button{
+    margin-left: 50%;
+    border-radius:5px;
+    background-color: #38353566;
+
+}
+.Registre{
+    padding: 2px;
+}

@@ -1,0 +1,68 @@
+.logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.logo1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.titre{
+    margin-top: 40%;
+}
+.bad{
+    margin-right:10%;
+    margin-left:8%;
+}
+.foot{
+    margin-right:10%;
+    margin-left:8%;
+}
+.volley{
+    margin-right:10%;
+    margin-left:8%;
+}
+
+h3{
+    margin-left: 10%;
+}
+.scoreboard input{
+    margin-left: 10%;
+    border-radius:5px;
+    width: 70%;
+    height: 3vh;
+}
+.premier{
+    color:gold;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+.deuxieme{
+    color:silver;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+.troisieme{
+    color :#cd7f32;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.retourvisitor button{
+    margin-left: 35%;
+    border-radius:5px;
+    background-color: #38353566;
+}
+

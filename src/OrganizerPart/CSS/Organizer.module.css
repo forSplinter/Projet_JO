@@ -1,0 +1,205 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 500px;
+  width: 90%; /* Make width responsive */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  border-radius: 8px; 
+  box-sizing: border-box;/* Optional: adds rounded corners */
+  height: 100vh;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.helpButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold; 
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+h2 {
+  font-weight: bold; 
+  margin-bottom: 40px;
+  color: rgb(107, 85, 56);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.centerText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center; /* Centre les boutons sociaux horizontalement */
+  gap: 20px; /* Espace entre les boutons */
+  margin-top: 30px; /* Espace au-dessus des boutons sociaux */
+  width: 100%; /* Assure que le conteneur prend toute la largeur */
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.socialButton img {
+  width: 24px;
+  height: 24px;
+}  
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menuItem {
+  background-color: gray; /* Couleur verte */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px; /* Taille de police pour les liens */
+  font-weight: medium; /* Poids de la police */
+  transition: background-color 0.3s, transform 0.3s; /* Transition pour le survol */
+}
+
+.menuItem:hover {
+  background-color: black; /* Vert foncé au survol */
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+.backButton {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: black; /* Vert pour l'harmonie avec les autres boutons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  display: inline-block; /* Permet au bouton de respecter le padding et la margin */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: gray; /* Assombrit le vert au survol */
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Smaller padding for smaller devices */
+    width: 100%; /* Use full width for very small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Smaller text on small screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Smaller buttons on small screens */
+  }
+
+  .menu {
+    width: 100%;
+    gap: 15px; /* Réduction de l'écart entre les éléments pour les petits écrans */
+  }
+
+  .menuItem {
+    width: 80%; /* Adaptation de la largeur pour les petits écrans */
+    padding: 12px 20px; /* Ajustement du padding pour une meilleure lisibilité */
+  }
+}
+.retourHome {
+  margin-left: 40%;
+  border-radius:5px;
+  background-color: #38353566;
+}

@@ -1,0 +1,73 @@
+.tabresults {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 5%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #f9f9f9;
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 112%;
+}
+  
+.scoreRegister {
+    text-align: center;
+    color: rgb(142, 113, 75);
+  }
+  
+.classementAthlete h2 {
+    margin-top: 20px;
+}
+.classementPays h2 {
+    margin-top: 20px;
+}
+  
+.athleteResult,
+.countryResult {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width :100%;
+    font-size: 90%;
+}
+  
+.athleteResult strong,
+.countryResult strong {
+    margin-right: 5px;
+    text-align: center;
+    flex:1;
+
+}
+  
+athleteResult div,
+.countryResult div {
+    margin-bottom: 5px;
+}
+.logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+  
+.logo1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+.retourorganizer button{
+    margin-left:40%;
+    border-radius:5px;
+    background-color: #38353566;
+}
+.classementPays button{
+    background-color: #38353566;
+}
+.classementAthlete button{
+    background-color: #38353566;
+}
